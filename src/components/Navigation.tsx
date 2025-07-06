@@ -17,7 +17,7 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl text-slate-800">Sarah Chen</div>
+          <div className="font-bold text-xl text-slate-800">Thays Santos</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

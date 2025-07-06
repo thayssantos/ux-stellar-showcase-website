@@ -14,7 +14,7 @@ const Footer = () => {
               Whether you need design consultation or want to collaborate on something meaningful, let's chat.
             </p>
             <a
-              href="mailto:sarah@example.com"
+              href="mailto:thays@example.com"
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition-colors duration-200"
             >
               <Mail size={20} />
@@ -26,7 +26,7 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Connect with me</h4>
             <div className="flex space-x-6 mb-6">
               <a
-                href="mailto:sarah@example.com"
+                href="mailto:thays@example.com"
                 className="text-slate-300 hover:text-white transition-colors duration-200 hover:scale-110 transform"
               >
                 <Mail size={24} />
@@ -56,7 +56,7 @@ const Footer = () => {
           <p className="flex items-center justify-center space-x-2 text-slate-400">
             <span>Made with</span>
             <Heart size={16} className="text-red-500 fill-current" />
-            <span>by Sarah Chen © 2024</span>
+            <span>by Thays Santos © 2024</span>
           </p>
         </div>
       </div>

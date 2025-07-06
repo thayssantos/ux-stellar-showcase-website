@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="mb-8 animate-fade-in">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
             <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center">
-              <span className="text-4xl font-bold text-slate-700">SC</span>
+              <span className="text-4xl font-bold text-slate-700">TS</span>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center space-x-6 mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <a href="mailto:sarah@example.com" className="text-slate-600 hover:text-blue-600 transition-colors duration-200 hover:scale-110 transform">
+          <a href="mailto:thays@example.com" className="text-slate-600 hover:text-blue-600 transition-colors duration-200 hover:scale-110 transform">
             <Mail size={24} />
           </a>
           <a href="#" className="text-slate-600 hover:text-blue-600 transition-colors duration-200 hover:scale-110 transform">
