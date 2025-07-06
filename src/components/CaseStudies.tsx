@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { ExternalLink, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CaseStudies = () => {
   const cases = [
     {
+      id: "ecommerce-redesign",
       title: "E-commerce Redesign",
       company: "TechStart Inc.",
       description: "Redesigned the entire e-commerce platform, resulting in 40% increase in conversion rates and improved user satisfaction.",
@@ -13,6 +15,7 @@ const CaseStudies = () => {
       year: "2023"
     },
     {
+      id: "mobile-banking-app",
       title: "Mobile Banking App",
       company: "FinTech Solutions",
       description: "Led the design of a mobile banking application focusing on accessibility and user trust.",
@@ -21,6 +24,7 @@ const CaseStudies = () => {
       year: "2023"
     },
     {
+      id: "saas-dashboard",
       title: "SaaS Dashboard",
       company: "DataFlow Corp",
       description: "Created an intuitive dashboard for complex data visualization, reducing user learning curve by 60%.",
@@ -44,9 +48,10 @@ const CaseStudies = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cases.map((case_study, index) => (
-            <div
+            <Link
               key={index}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              to={`/case/${case_study.id}`}
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 block"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -82,12 +87,12 @@ const CaseStudies = () => {
                   ))}
                 </div>
                 
-                <button className="flex items-center space-x-2 text-blue-600 font-medium hover:text-blue-700 transition-colors group/btn">
+                <div className="flex items-center space-x-2 text-blue-600 font-medium hover:text-blue-700 transition-colors group/btn">
                   <span>View Case Study</span>
                   <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
